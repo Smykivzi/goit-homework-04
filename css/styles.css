@@ -131,7 +131,8 @@ body {
 	background: var(--main-color);
 	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 		url(../images/background/people-office1.jpg);
-
+	border-image-repeat: no-repeat;
+	max-width: 1440px;
 	padding-top: 188px;
 	padding-bottom: 188px;
 	border: 1px solid #000;
@@ -284,6 +285,8 @@ body {
 .team-content {
 	padding: 32px 16px;
 	background-color: var(--white-pure-color);
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	border-radius: 0px 0px 4px 4px;
 }
 .social-list {
 	display: flex;
@@ -324,7 +327,6 @@ body {
 	display: flex;
 	gap: 24px;
 }
-
 .customers-item {
 	width: 168px;
 	height: 88px;
@@ -341,10 +343,9 @@ body {
 .customers-link:is(:hover, :focus) {
 	border-color: var(--blue-second-color);
 }
-.customers-link:is(:hover, :focus) .customers-icon {
+.customers-link .customers-icon:hover {
 	fill: var(--blue-second-color);
 }
-
 .customers-icon {
 	fill: var(--grey-color);
 }
@@ -458,6 +459,10 @@ body {
 	border-right: 1px solid var(--white-second-color);
 	border-left: 1px solid var(--white-second-color);
 	border-bottom: 1px solid var(--white-second-color);
+}
+.exampl-content:hover {
+	border: 0.5px solid var(--white-second-color);
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .exampl-subtitle {
 	font-weight: 500;
