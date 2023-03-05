@@ -6,6 +6,8 @@
 	--white-second-color: #e7e9fc;
 	--blue-first-color: #4d5ae5;
 	--blue-second-color: #404bbf;
+	--grey-color: #8e8f99;
+	--footer-link: #31d0aa;
 }
 h1,
 h2,
@@ -127,6 +129,9 @@ body {
 /* Hero section */
 .hero {
 	background: var(--main-color);
+	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+		url(../images/background/people-office1.jpg);
+
 	padding-top: 188px;
 	padding-bottom: 188px;
 	border: 1px solid #000;
@@ -197,7 +202,17 @@ body {
 	display: flex;
 	column-gap: 24px;
 }
+.list-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 8px;
+	width: 264px;
+	height: 112px;
 
+	background: var(--white-first-color);
+	border-radius: 4px;
+}
 .mtd-list-title {
 	font-weight: 500;
 	font-size: 20px;
@@ -264,12 +279,75 @@ body {
 	letter-spacing: 0.02em;
 	color: var(--accent-color);
 	font-size: 16px;
+	margin-bottom: 8px;
 }
 .team-content {
 	padding: 32px 16px;
 	background-color: var(--white-pure-color);
 }
+.social-list {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+}
 
+.social-item {
+	fill: var(--blue-first-color);
+}
+.social-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: var(--blue-first-color);
+}
+.social-link:hover,
+.social-link:focus {
+	background-color: var(--blue-second-color);
+}
+.customers {
+	padding: 120px 0;
+}
+.customers-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.11;
+	text-align: center;
+	letter-spacing: 0.02em;
+	text-transform: capitalize;
+	color: var(--main-color);
+	margin-bottom: 72px;
+}
+.customers-list {
+	display: flex;
+	gap: 24px;
+}
+
+.customers-item {
+	width: 168px;
+	height: 88px;
+}
+.customers-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	border: 1px solid var(--grey-color);
+	border-radius: 4px;
+}
+.customers-link:is(:hover, :focus) {
+	border-color: var(--blue-second-color);
+}
+.customers-link:is(:hover, :focus) .customers-icon {
+	fill: var(--blue-second-color);
+}
+
+.customers-icon {
+	fill: var(--grey-color);
+}
 .footer-logo {
 	font-family: "Raleway";
 	font-style: normal;
@@ -295,6 +373,45 @@ body {
 .footer {
 	background: var(--main-color);
 	padding: 100px 0;
+}
+.footer-container {
+	display: flex;
+	direction: row;
+}
+.footer-main {
+	display: block;
+	align-items: center;
+	width: 35%;
+}
+.footer-subcontainer {
+	display: block;
+	align-items: center;
+	width: 65%;
+}
+.footer-subtitle {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--white-pure-color);
+	margin-bottom: 8px;
+}
+.media-list {
+	display: flex;
+	gap: 16px;
+}
+.media-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.media-link:hover,
+.media-link:focus {
+	background-color: var(--footer-link);
 }
 .portfolio {
 	display: flex;
