@@ -343,7 +343,7 @@ body {
 .customers-link:is(:hover, :focus) {
 	border-color: var(--blue-second-color);
 }
-.customers-link .customers-icon:hover {
+.customers-link:hover .customers-icon {
 	fill: var(--blue-second-color);
 }
 .customers-icon {
